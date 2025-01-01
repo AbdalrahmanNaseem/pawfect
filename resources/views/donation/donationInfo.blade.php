@@ -32,32 +32,32 @@
 
                 <!-- start of right box -->
                 <div class="col-md-7 right-box">
-                    <form action="" method="">
+                    <form action="{{ route('donatePayment') }}" method="">
                         <div class="row align-items-center justify-content-center">
                             <div class="header-text mb-4 text-center">
                                 <h2>Personal Information</h2>
                             </div>
                             <div class="input-group mb-4">
-                                <input type="text" name="FirstName" class="form-control form-control-lg bg-light fs-6"
-                                    placeholder="First Name">
+                                <input required type="text" name="FirstName"
+                                    class="form-control form-control-lg bg-light fs-6" placeholder="First Name">
                             </div>
                             <div class="input-group mb-4">
-                                <input type="text" name="LastName" class="form-control form-control-lg bg-light fs-6"
-                                    placeholder="Last Name">
+                                <input required type="text" name="LastName"
+                                    class="form-control form-control-lg bg-light fs-6" placeholder="Last Name">
                             </div>
                             <div class="input-group mb-4">
-                                <input type="text" name="email" class="form-control form-control-lg bg-light fs-6"
-                                    placeholder="Email Address">
+                                <input required type="text" name="email"
+                                    class="form-control form-control-lg bg-light fs-6" placeholder="Email Address">
                             </div>
                             <div class="input-group mb-4">
                                 <input type="text" name="PhoneNumber" class="form-control form-control-lg bg-light fs-6"
-                                    placeholder="Phone Number">
+                                    placeholder="Phone Number" required>
                             </div>
 
                             <div class="input-group mt-4">
-                                <!-- <button type="submit" class="btn-creat btn btn-lg w-100 fs-6 text-white">Create Account</button> -->
-                                <a href="../Login things/Login.html" class="btn btn-lg w-100 fs-6 text-white"
-                                    style="background-color: #4A9833;">Submit</a>
+                                <button type="submit" class="btn btn-lg w-100 fs-6 text-white"
+                                    style="background-color: #4A9833; ">next</button>
+
                             </div>
                         </div>
                     </form>

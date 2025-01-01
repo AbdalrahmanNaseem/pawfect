@@ -37,20 +37,6 @@
                                 required placeholder="Email address">
                         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         <div class="input-group mb-3">
                             <input type="password" name="password" id="password"
                                 class="form-control form-control-lg bg-light fs-6" placeholder="Password" required>
@@ -58,16 +44,6 @@
                                 <span class="text-danger">{{ $errors->first('emailPassword') }}</span>
                             @endif
                         </div>
-
-
-
-
-
-
-
-
-
-
 
 
                         <div class="row text-start mb-4" style="width:90%">

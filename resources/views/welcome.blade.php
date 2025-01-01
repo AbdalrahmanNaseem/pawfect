@@ -166,7 +166,8 @@
                             <h3>Most Popular Product</h3>
                         </div>
                         <div class="col text-end">
-                            <a href="#" class="btn text-light" style="background-color: #4D9B36;">View More</a>
+                            <a href="{{ route('storeCard') }}" class="btn text-light"
+                                style="background-color: #4D9B36;">View More</a>
                         </div>
                     </div>
                     <!-- Header -->

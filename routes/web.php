@@ -9,6 +9,12 @@ Route::get('/', function () {
 
 
 
+//اول خانه اسم الصفحة بال url 
+//ثاني خانه اسم الصفحة بال view
+//ثالث خانه اسم الصفحة بال route
+
+
+
 Route::get('/Signup', function () {
     return view('login.SingUp');
 })->name('signup');
@@ -46,7 +52,7 @@ Route::get('/aboutUs', function () {
 
 Route::get('/store', function () {
     return view('store.storePayment');
-})->name('store');
+})->name('storePayment ');
 
 
 Route::get('/store.card', function () {
@@ -67,3 +73,4 @@ Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name(
 Route::get('registration', [CustomAuthController::class, 'registration'])->name('register-user');
 Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom');
 Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
+// Route::get('massage', [CustomAuthController::class, 'otpmassage'])->name('otp');

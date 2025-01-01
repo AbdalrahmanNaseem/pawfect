@@ -69,7 +69,8 @@
                                 <a href="#" class="mx-2"><i class="bi bi-instagram"></i></a>
                                 <a href="#" class="mx-2"><i class="bi bi-whatsapp"></i></a>
                                 <a href="#" class="mx-2"><i class="bi bi-geo-alt-fill"></i></a>
-                                <a href="#" class="btn btn-light text-center mt-3">
+                                <a @if (Auth::check()) href="{{ route('donatePayment') }}" @endif
+                                    href="{{ route('donateInfo') }}" class="btn btn-light text-center mt-3">
                                     Donate Now
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
@@ -95,7 +96,8 @@
                                 <a href="#" class="mx-2"><i class="bi bi-instagram"></i></a>
                                 <a href="#" class="mx-2"><i class="bi bi-whatsapp"></i></a>
                                 <a href="#" class="mx-2"><i class="bi bi-geo-alt-fill"></i></a>
-                                <a href="#" class="btn btn-light text-center mt-3">
+                                <a @if (Auth::check()) href="{{ route('donatePayment') }}" @endif
+                                    href="{{ route('donateInfo') }}" class="btn btn-light text-center mt-3">
                                     Donate Now
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
@@ -121,7 +123,8 @@
                                 <a href="#" class="mx-2"><i class="bi bi-instagram"></i></a>
                                 <a href="#" class="mx-2"><i class="bi bi-whatsapp"></i></a>
                                 <a href="#" class="mx-2"><i class="bi bi-geo-alt-fill"></i></a>
-                                <a href="#" class="btn btn-light text-center mt-3">
+                                <a @if (Auth::check()) href="{{ route('donatePayment') }}" @endif
+                                    href="{{ route('donateInfo') }}" class="btn btn-light text-center mt-3">
                                     Donate Now
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
@@ -147,7 +150,8 @@
                                 <a href="#" class="mx-2"><i class="bi bi-instagram"></i></a>
                                 <a href="#" class="mx-2"><i class="bi bi-whatsapp"></i></a>
                                 <a href="#" class="mx-2"><i class="bi bi-geo-alt-fill"></i></a>
-                                <a href="#" class="btn btn-light text-center mt-3">
+                                <a @if (Auth::check()) href="{{ route('donatePayment') }}" @endif
+                                    href="{{ route('donateInfo') }}" class="btn btn-light text-center mt-3">
                                     Donate Now
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
@@ -173,7 +177,8 @@
                                 <a href="#" class="mx-2"><i class="bi bi-instagram"></i></a>
                                 <a href="#" class="mx-2"><i class="bi bi-whatsapp"></i></a>
                                 <a href="#" class="mx-2"><i class="bi bi-geo-alt-fill"></i></a>
-                                <a href="#" class="btn btn-light text-center mt-3">
+                                <a @if (Auth::check()) href="{{ route('donatePayment') }}" @endif
+                                    href="{{ route('donateInfo') }}" class="btn btn-light text-center mt-3">
                                     Donate Now
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
@@ -199,7 +204,8 @@
                                 <a href="#" class="mx-2"><i class="bi bi-instagram"></i></a>
                                 <a href="#" class="mx-2"><i class="bi bi-whatsapp"></i></a>
                                 <a href="#" class="mx-2"><i class="bi bi-geo-alt-fill"></i></a>
-                                <a href="#" class="btn btn-light text-center mt-3">
+                                <a @if (Auth::check()) href="{{ route('donatePayment') }}" @endif
+                                    href="{{ route('donateInfo') }}" class="btn btn-light text-center mt-3">
                                     Donate Now
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">

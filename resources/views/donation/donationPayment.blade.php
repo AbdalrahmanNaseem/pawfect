@@ -30,36 +30,38 @@
 
                 <!-- start of right box -->
                 <div class="col-md-7 right-box">
-                    <form action="" method="">
+                    <form action="{{ route('home') }}" method="post">
+                        @csrf
                         <div class="row align-items-center justify-content-center">
                             <div class="header-text mb-4 text-center">
                                 <h2>Make a Difference Today</h2>
                             </div>
                             <div class="input-group mb-4">
-                                <input type="text" name="cardName" class="form-control form-control-lg bg-light fs-6"
-                                    placeholder="Name on Card">
+                                <input required type="text" name="cardName"
+                                    class="form-control form-control-lg bg-light fs-6" placeholder="Name on Card">
                             </div>
                             <div class="input-group mb-4">
-                                <input type="text" name="cardNumber" class="form-control form-control-lg bg-light fs-6"
-                                    placeholder="Card Number">
+                                <input required type="text" name="cardNumber"
+                                    class="form-control form-control-lg bg-light fs-6" placeholder="Card Number">
                             </div>
                             <div class="input-group mb-4" style="width: 50%;">
-                                <input type="text" name="cardDate" class="form-control form-control-lg bg-light fs-6"
-                                    placeholder="Card Date (mm/yy)">
+                                <input required type="text" name="cardDate"
+                                    class="form-control form-control-lg bg-light fs-6" placeholder="Card Date (mm/yy)">
                             </div>
                             <div class="input-group mb-4" style="width: 50%;">
-                                <input type="text" name="cardCvv" class="form-control form-control-lg bg-light fs-6"
-                                    placeholder="Card CVV">
+                                <input required type="text" name="cardCvv"
+                                    class="form-control form-control-lg bg-light fs-6" placeholder="Card CVV">
                             </div>
                             <div class="input-group mb-4">
                                 <input type="text" name="Amount" class="form-control form-control-lg bg-light fs-6"
-                                    placeholder="Amount of Donation">
+                                    placeholder="Amount of Donation" required>
                             </div>
 
                             <div class="input-group mt-4">
-                                <!-- <button type="submit" class="btn-creat btn btn-lg w-100 fs-6 text-white">Create Account</button> -->
-                                <a href="../Login things/Login.html" class="btn btn-lg w-100 fs-6 text-white"
-                                    style="background-color: #4A9833;">Donate now</a>
+                                <button type="submit" class="btn btn-lg w-100 fs-6 text-white"
+                                    style="background-color: #4A9833;">Donate now</button>
+                                {{-- <a href="../Login things/Login.html" class="btn btn-lg w-100 fs-6 text-white" --}}
+                                {{-- style="background-color: #4A9833;">Donate now</a> --}}
                             </div>
                         </div>
                     </form>
