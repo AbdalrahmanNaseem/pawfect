@@ -12,19 +12,21 @@
              <!-- Quick Links -->
              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                  <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
-                 <p><a href="../Adoption/Adoption.html">Adopt a Pet</a></p>
-                 <p><a href="#">Shop Pet Supplies</a></p>
-                 <p><a href="../Donate/Donate.html">Rescue & Donate</a></p>
-                 <p><a href="../Donate/Donate.html">Pet Care Guides</a></p>
+                 <p><a href="{{ route('adoption') }}">Adopt a Pet</a></p>
+                 <p><a href="{{ route('storeCard') }}">Shop Pet Supplies</a></p>
+                 <p><a href="{{ route('donate') }}">Rescue & Donate</a></p>
+                 <p><a href="{{ route('donate') }}">Pet Care Guides</a></p>
+
              </div>
              <!-- Quick Links -->
 
              <!-- About Us -->
              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                  <h5 class="text-uppercase mb-4 font-weight-bold">About Us</h5>
-                 <p><a href="../About us/AboutUs.html">Our Mission</a></p>
-                 <p><a href="../About us/AboutUs.html">Meet the Team</a></p>
-                 <p><a href="../About us/AboutUs.html">FAQs</a></p>
+                 <p><a href="{{ route('aboutUs') }}">Our Mission</a></p>
+                 <p><a href="{{ route('aboutUs') }}">Meet the Team</a></p>
+                 <p><a href="{{ route('aboutUs') }}">FAQs</a></p>
+
              </div>
              <!-- About Us -->
 

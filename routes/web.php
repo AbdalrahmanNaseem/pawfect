@@ -55,4 +55,4 @@ Route::get('/store.card', function () {
 
 Route::get('/Adoption', function () {
     return view('Adoption.Adoption');
-})->name('Adoption');
+})->name('adoption');

@@ -2,6 +2,7 @@
 @section('content')
 
     <body>
+        <link rel="stylesheet" href="{{ asset('assets/css/index.css') }}">
 
         <!-- navbar -->
 

@@ -1,7 +1,7 @@
  <!-- navbar -->
  <nav class="navbar navbar-expand-md">
      <div class="container">
-         <a href="#" class="navbar-brand">
+         <a href="{{ route('home') }}" class="navbar-brand">
              <img class="img-fluid" src="{{ asset('assets/images/logo.svg') }}" style="width: 75px;">
          </a>
          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -11,7 +11,7 @@
          <div class="collapse navbar-collapse" id="navmenu">
              <ul class="navbar-nav ms-auto">
                  <!-- Home Dropdown -->
-                 <a class="nav-link" href="../Home/index.html">
+                 <a class="nav-link" href="{{ route('home') }}">
                      Home
                  </a>
 

@@ -2,13 +2,11 @@
 <html class="no-js" lang="en">
 
 <head>
-    <title>Codexal - CCH</title>
+    <title>HU-Pawfect </title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Codexal">
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="description"
-        content="Welcome to participate in the CCH-2025 Technology Innovation Hackathon, the largest event dedicated to empowering university students in showcasing their creativity and technical skills through AI-driven projects">
     <!-- favicon icon -->
 
 
@@ -23,9 +21,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <!-- style sheets and font icons -->
-    <link rel="stylesheet" href="{{ asset('assets/css/index.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/Store.css') }}?v={{ time() }}">
+
+
+
 
 </head>
 
