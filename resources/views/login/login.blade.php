@@ -22,41 +22,73 @@
             <!-- start of left box -->
             <div class="col-lg-6 col-md-6 right-box">
 
-                <form action="" method="">
+                <form method="POST" action="{{ route('login.custom') }}">
+                    @csrf
+
                     <div class="row align-items-center justify-content-center">
                         <div class="mb-4 text-center">
                             <img src="{{ asset('assets/images/logo.svg') }}" class="img-fluid" style="width: 200px;">
                             <hr style="width: 40%; height: 2px; margin: 0 auto;">
                         </div>
+
+
                         <div class="input-group mb-3">
                             <input type="text" name="email" class="form-control form-control-lg bg-light fs-6"
-                                placeholder="Email address">
+                                required placeholder="Email address">
                         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <div class="input-group mb-3">
-                            <input type="password" name="password" class="form-control form-control-lg bg-light fs-6"
-                                placeholder="Password">
+                            <input type="password" name="password" id="password"
+                                class="form-control form-control-lg bg-light fs-6" placeholder="Password" required>
+                            @if ($errors->has('emailPassword'))
+                                <span class="text-danger">{{ $errors->first('emailPassword') }}</span>
+                            @endif
                         </div>
+
+
+
+
+
+
+
+
+
+
+
 
                         <div class="row text-start mb-4" style="width:90%">
                             <small><a href="../password/password.html" style="color:#4A9833">Forgot
                                     Password?</a></small>
                         </div>
-
-                        <div class="input-group mb-3">
-                            <!-- <button  type="submit" class="btn-login btn btn-lg w-100 fs-6 text-white">Login</button> -->
-                            <a href="../Home/index.html" class="btn-login btn btn-lg w-100 fs-6 text-white">Login</a>
+                        <div class="row text-start mb-4" style="width:90%">
+                            <small>Don't have an account? <a href="{{ route('signup') }}">Creat
+                                    account</a></small>
                         </div>
                         <div class="input-group mb-3">
+                            <button type="submit" class="btn-login btn btn-lg w-100 fs-6 text-white">Login</button>
+                        </div>
+                        {{-- <div class="input-group mb-3">
                             <button class="btn btn-lg w-100 fs-6" style="background-color: #BDBDBD !important;"><img
                                     src="{{ asset('assets/images/google.png') }}" style="width:20px"
                                     class="me-2"><small>Login with
                                     Google</small></button>
-                        </div>
+                        </div> --}}
 
-                        <div class="row text-start mb-4" style="width:90%">
-                            <small>Don't have an account? <a href="../Sign-up things/Signup.html">Creat
-                                    account</a></small>
-                        </div>
+
                     </div>
                 </form>
             </div>

@@ -42,44 +42,67 @@
 
             <!-- start of right box -->
             <div class="col-lg-6 col-md-7 right-box">
-                <form action="" method="">
+                <form action="{{ route('register.custom') }}" method="POST">
+                    @csrf
+
                     <div class="row align-items-center justify-content-center">
                         <div class="header-text mb-4 text-center">
                             <h2>Creat Account</h2>
                         </div>
                         <div class="input-group mb-3">
-                            <input type="text" name="FirstName" class="form-control form-control-lg bg-light fs-6"
-                                placeholder="First Name">
+                            <input type="text" name="name" id="name"
+                                class="form-control form-control-lg bg-light fs-6" placeholder="Full Name" required
+                                autofocus>
+
+                            @if ($errors->has('name'))
+                                <span class="text-danger">{{ $errors->first('name') }}</span>
+                            @endif
                         </div>
+
+
+
+
                         <div class="input-group mb-3">
-                            <input type="text" name="LastName" class="form-control form-control-lg bg-light fs-6"
-                                placeholder="Last Name">
+                            <input type="text" id="email_address" name="email"
+                                class="form-control form-control-lg bg-light fs-6" required placeholder="Email Address">
+                            @if ($errors->has('email'))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                            @endif
                         </div>
+
+
+
+
+
+
+
                         <div class="input-group mb-3">
-                            <input type="text" name="email" class="form-control form-control-lg bg-light fs-6"
-                                placeholder="Email Address">
+                            <input type="password" name="password" id="password" required
+                                class="form-control form-control-lg bg-light fs-6" placeholder="Password">
+                            @if ($errors->has('password'))
+                                <span class="text-danger">{{ $errors->first('password') }}</span>
+                            @endif
                         </div>
-                        <div class="input-group mb-3">
-                            <input type="password" name="password" class="form-control form-control-lg bg-light fs-6"
-                                placeholder="Password">
-                        </div>
-                        <div class="input-group mb-4">
+
+
+
+                        {{-- <div class="input-group mb-4">
                             <input type="text" name="PhoneNumber" class="form-control form-control-lg bg-light fs-6"
                                 placeholder="Phone Number">
-                        </div>
+                        </div> --}}
 
                         <div class="row text-start mb-4" style="width:90%">
-                            <small>Already have an account? <a href="../Login things/Login.html">Login</a></small>
+                            <small>Already have an account? <a href="{{ route('login') }}">Login</a></small>
                         </div>
 
 
 
 
                         <div class="input-group mb-3">
-                            {{-- <button type="submit" class="btn-creat btn btn-lg w-100 fs-6 text-white">Create
-                                Account</button> --}}
-                            <a href="../Login things/Login.html"
-                                class="btn-creat btn btn-lg w-100 fs-6 text-white">Create Account</a>
+                            <button type="submit" class="btn-creat btn btn-lg w-100 fs-6 text-white">Create
+                                Account</button>
+                            {{-- <a href="../Login things/Login.html"
+                                class="btn-creat btn btn-lg w-100 fs-6 text-white">Create Account</a> --}}
                         </div>
                         <div class="input-group mb-3">
                             <button class="btn btn-lg w-100 fs-6" style="background-color: #BDBDBD !important;"><img
